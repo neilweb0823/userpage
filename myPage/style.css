@@ -1,0 +1,144 @@
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    :root {
+    /* Base background: Pure and transcendent white (九天玄女-玄仙白) */
+    --bg-fairy-white: #f7f9fa;
+
+    /* Main text: Deep, professional and calm black (玄天上帝-玄武黑) */
+    --text-mystic-black: #1e252b;
+
+    /* Primary/Highlight: Energetic and passionate red (太子爺-蓮花紅) */
+    --primary-lotus-red: #b83b32;
+
+    /* Secondary: Deep, wise and sophisticated blue (九天玄女-玄青藍) */
+    --secondary-mystic-blue: #2a475e;
+
+    /* Accent: Elegant and divine gold (代天府/神明金身-祥雲金) */
+    --accent-auspicious-gold: #d4a359;
+
+    /* Support: Healing, calm and compassionate green (觀音佛祖-菩提綠) */
+    --support-bodhi-green: #4a6b53;
+
+    /* 1. 微弱陰影：適合用於卡片、工作經歷區塊，呈現隱隱約約的沉靜平穩（觀音佛祖的安定感） */
+    --shadow-sm:
+        0 2px 8px rgba(30, 37, 43, 0.04), 0 1px 3px rgba(30, 37, 43, 0.02);
+
+    /* 2. 標準陰影：適合用於整張履歷主體（Resume Container），讓履歷微微浮出背景，呈現大氣與立體感 */
+    --shadow-md:
+        0 10px 30px rgba(30, 37, 43, 0.06), 0 4px 12px rgba(30, 37, 43, 0.03);
+
+    /* 3. 懸浮/強調陰影：適合用於按鈕、作品集卡片在 Hover（滑鼠懸停）時的動態效果，展現果斷與活力（太子爺的躍動感） */
+    --shadow-lg:
+        0 20px 40px rgba(30, 37, 43, 0.12), 0 1px 3px rgba(30, 37, 43, 0.05);
+    }
+    body {
+    background-color: var(--bg-fairy-white);
+    font-family:
+        "Roboto", "Helvetica Neue", "Helvetica", "Noto Sans TC",
+        "Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+    }
+    .s01 {
+    background-color: var(--secondary-mystic-blue);
+    height: 100vh;
+    position: relative;
+    }
+    .s01 .box01 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--accent-auspicious-gold);
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    .s01 .box02 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--accent-auspicious-gold);
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+    .s01 .box03 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--accent-auspicious-gold);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+    .s01 .box04 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--accent-auspicious-gold);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    }
+    .s01 .userImg {
+    position: absolute;
+    background-color: var(--support-bodhi-green);
+    background-image: url(./images/ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    top: 100px;
+    right: 100px;
+    left: 100px;
+    bottom: 100px;
+    }
+    .s01 .userText {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 60%;
+    }
+    .s01 .userText h1 {
+    font-size: 36px;
+    color: var(--text-mystic-black);
+    }
+
+    .s02 {
+    padding: 50px 10%;
+    background-color: var(--bg-fairy-white);
+    text-align: center;
+    }
+
+    .s02 h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+
+    .s02 .card {
+    background-color: var(--accent-auspicious-gold);
+    padding: 10px ;
+    margin: 30px 100px;
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    }
+
+    .s02 .card h3{
+        font-size: 24px;
+        color: var(--secondary-mystic-blue);
+        margin:10px 0;
+    }
+
+    .s02 .card p{
+        font-size: 16px;
+        margin: 10px 0;
+        color: var(--secondary-mystic-blue);
+    }
+
+    .s02 .card a{
+        background-color: var(--support-bodhi-green);
+        padding: 5px 5px;
+        margin: 5px 0;
+        display: inline-block;
+        text-decoration: none;
+        color: var(--bg-fairy-white);
+        border-radius: 15px;
+    }
