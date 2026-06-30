@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1024px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgbox {
+  width: 1024px;
+  height: 300px;
+  background-color: var(--mycolor02);
+  /* 背景圖 */
+  background-image: url(/images/car3.avif);
+  background-position: center 90%;
+  background-size: cover;
+}
+
+nav {
+  background-color: var(--bg-asphalt);
+  text-align: center;
+  margin-top: 5px;
+}
+
+nav ul {
+  display: inline-block;
+  margin: 20px;
+}
+
+nav li {
+  float: left;
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  background-color: var(--mycolor02);
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--text-silver);
+  border: 2px solid var(--caliper-yellow);
+  border-radius: 5px;
+  box-shadow: var(--shadow-nav-default);
+  transition:
+    border-radius 1s,
+    box-shadow 1s;
+}
+
+nav ul li a:hover {
+  border-radius: 10px;
+  box-shadow: var(--shadow-nav-hover);
+}
+
+.content {
+  background-color: var(--bg-asphalt);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 5px;
+}
+
+.content h1 {
+  padding: 10px;
+  color: var(--text-silver);
+  font-size: 50px;
+}
+
+.content p {
+  margin: 20px;
+  font-size: 20px;
+  color: var(--text-needle);
+}
+
+.content a {
+  display: block;
+  background-color: var(--race-red);
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #160d2d;
+  /* 在高亮黃底上，使用毒性深紫字確保極高閱讀性 */
+  line-height: 40px;
+  box-shadow: var(--shadow-btn-default);
+  transition: box-shadow 0.4s;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content a:hover {
+  box-shadow: var(--shadow-btn-hover);
+}
+
+.footer {
+  background-color: var(--mycolor02);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+}
+
+.footer p {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-needle);
+}
+
+/* 字體粗細 */
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+/* roller-top, bottom, left, right */
+/* roller-top */
+.roller-t {
+  position: relative;
+  overflow: hidden;
+}
+
+.roller-t .roller-box {
+  position: absolute;
+  /* 修改：改成更有質感的半透明深色（或可以使用主色調） */
+  background-color: rgba(243, 219, 140, 0.562);
+  /* 這裡改成了優雅的半透明金色 */
+  color: #1a1a1a;
+  /* 遮罩滑入後的文字顏色 */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -100%;
+  right: 0;
+
+  /* 微調：將 1s 改成 0.4s，動效會更乾脆俐落、不拖泥帶水 */
+  transition: top 0.4s ease-in-out;
+}
+
+.roller-t:hover .roller-box {
+  top: 0;
+}
+
+/* roller-bottom */
+.roller-b {
+  position: relative;
+  overflow: hidden;
+}
+
+.roller-b .roller-box {
+  position: absolute;
+  /* 修改：改成更有質感的半透明深色（或可以使用主色調） */
+  background-color: rgba(243, 219, 140, 0.562);
+  /* 這裡改成了優雅的半透明金色 */
+  color: #1a1a1a;
+  /* 遮罩滑入後的文字顏色 */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -100%;
+  left: 0;
+
+  /* 微調：將 1s 改成 0.4s，動效會更乾脆俐落、不拖泥帶水 */
+  transition: bottom 0.4s ease-in-out;
+}
+
+.roller-b:hover .roller-box {
+  bottom: 0;
+}
+
+/* roller-left */
+.roller-l {
+  position: relative;
+  overflow: hidden;
+}
+
+.roller-l .roller-box {
+  position: absolute;
+  /* 修改：改成更有質感的半透明深色（或可以使用主色調） */
+  background-color: rgba(243, 219, 140, 0.562);
+  /* 這裡改成了優雅的半透明金色 */
+  color: #1a1a1a;
+  /* 遮罩滑入後的文字顏色 */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -100%;
+  bottom: 0;
+
+  /* 微調：將 1s 改成 0.4s，動效會更乾脆俐落、不拖泥帶水 */
+  transition: left 0.4s ease-in-out;
+}
+
+.roller-l:hover .roller-box {
+  left: 0;
+}
+
+/* roller-right */
+.roller-r {
+  position: relative;
+  overflow: hidden;
+}
+
+.roller-r .roller-box {
+  position: absolute;
+  /* 修改：改成更有質感的半透明深色（或可以使用主色調） */
+  background-color: rgba(148, 45, 151, 0.315);
+  /* 這裡改成了優雅的半透明金色 */
+  color: #1a1a1a;
+  /* 遮罩滑入後的文字顏色 */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -100%;
+  bottom: 0;
+
+  /* 微調：將 1s 改成 0.4s，動效會更乾脆俐落、不拖泥帶水 */
+  transition: right 0.4s ease-in-out;
+}
+
+.roller-r:hover .roller-box {
+  right: 0;
+}
+
+
+/* 字體顏色 */
+.btn-text-primary {
+  color: var(--race-red);
+}
+
+.btn-text-secondary {
+  color: var(--caliper-yellow);
+}
+
+
+/* bgimg */
+.bg-cover {
+  background-size:cover;
+  background-position: center center;
+}
+
+
+@media screen and (max-width:1200px) and (min-width:1025px) {
+  .imgbox {
+    background-image: url(../images/car2.avif);
+    background-position: center 55%;
+    background-size: cover;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .imgbox {
+    width: 100%;
+    background-image: url(../images/car1.avif);
+    background-position: center 60%;
+    background-size: cover;
+  }
+
+  nav ul {
+    display: block;
+    padding-left: 30px;
+  }
+
+  nav ul li {
+    float: none;
+    margin: 10px 0px;
+  }
+
+  nav ul li a {
+    background-color: var(--bg-asphalt);
+    color: var(--caliper-yellow);
+  }
+
+  .content {
+    padding: 0 40px;
+  }
+
+  .content p {
+    line-height: 2;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .content a {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+}
